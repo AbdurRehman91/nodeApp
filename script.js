@@ -5,8 +5,13 @@ export default function () {
   //http.get('https://test.k6.io');
   var url = 'http://localhost:8010/api/jobListing';
   var payload = JSON.stringify({
-    title: 'title',
-    company: 'newCompany',
+    jobTitle: 'testName',
+    company: 'testCompany',
+    location: 'Lahore',
+    postDate: '5-4-2021',
+    applyEmail: 'test@app.com',
+    leaveType: 'Monthly',
+    trending: 'true'
   });
 
   var params = {
